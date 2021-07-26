@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="admin" max_length="40" name="x_669658_my_app2_abmin" sizeclass="0" type="collection">
+        <element label="Age" mandatory="true" max_length="40" name="age" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Department" mandatory="true" max_length="40" name="department" type="string"/>
+        <element label="employee number" mandatory="true" max_length="40" name="employee_number" type="float"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" mandatory="true" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="famale" value="famale"/>
+                <element inactive_on_update="false" label="male" value="male"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+    </element>
+</database>

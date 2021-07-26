@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Books" max_length="40" name="x_669658_my_app2_books" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Category" mandatory="true" max_length="40" name="category" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="No." mandatory="true" max_length="40" name="no" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" mandatory="true" max_length="20" name="price" type="price"/>
+        <element attributes="edge_encryption_enabled=true" label="Publishing House" mandatory="true" max_length="40" name="publishing_house" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Damaged" value="damaged"/>
+                <element inactive_on_update="false" label="Lend out" value="lend_out"/>
+                <element inactive_on_update="false" label="Lost" value="lost"/>
+                <element inactive_on_update="false" label="To borrow" value="to_borrow"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Version" mandatory="true" max_length="40" name="version" type="string"/>
+    </element>
+</database>
